@@ -1,7 +1,7 @@
 import React from "react";
 import './HeroStyles.css'
 
-import Galaxy from "../../../../starrise-frontend-novi-eindopdracht/src/assests/Galaxy-by-hristo-fidanov.jpg"
+import Galaxy from "../../../../starrise-frontend-novi-eindopdracht/src/assets/Galaxy-by-hristo-fidanov.jpg"
 
 function Hero() {
     return(

@@ -1,6 +1,6 @@
 import React from "react";
 import axios from 'axios';
-import './../components/ZonEnMaan/ZonEnMaan.css'
+import '../components/ZonEnMaan/ZonEnMaanStyles.css'
 
 function ZonEnMaan(){
 

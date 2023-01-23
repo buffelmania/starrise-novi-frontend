@@ -1,13 +1,13 @@
 import React from "react";
 import './App.css';
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Wist from "./pages/Wist-je-dat";
-import Links from "./pages/Links";
-import RegisterLogin from "./pages/RegisterLogin";
-import Home from "./pages/Home";
-import ZonEnMaan from "./pages/ZonEnMaan";
+import Wist from "./Pages/Wist-je-dat";
+import Links from "./Pages/Links";
+import RegisterLogin from "./Pages/RegisterLogin";
+import Home from "./Pages/Home";
+import ZonEnMaan from "./Pages/ZonEnMaan";
 
 
 
