@@ -1,0 +1,47 @@
+.ZonEnMaan{
+    padding-top: 100px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.ZonEnMaan:before{
+    content: '';
+    /*background-image: url("../../assets/rachel-cook-mOcdke2ZQoE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+.container{
+    background-image: url("../../../../starrise-frontend-novi-eindopdracht/src/assets/rachel-cook-mOcdke2ZQoE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
