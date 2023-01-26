@@ -11,6 +11,7 @@ import Home from "./Pages/Home";
 import ZonEnMaan from "./Pages/ZonEnMaan";
 import Account from "./Pages/Account";
 import {AuthContextProvider} from "./context/AuthContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 
 
@@ -29,7 +30,7 @@ function App() {
             <Route path="/Signin" element={<Signin />} />
               <Route path="/SignUp" element={<SignUp />} />
               <Route path="/Account" element={<Account/>}/>
-            <Route path="/ZonEnMaan" element={<ZonEnMaan />} />
+              <Route path="/ZonEnMaan" element={<ProtectedRoute><ZonEnMaan /></ProtectedRoute>} />
 
           </Routes>
         </AuthContextProvider>
