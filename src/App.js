@@ -5,7 +5,8 @@ import Hero from "./components/Hero/Hero";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Wist from "./Pages/Wist-je-dat";
 import Links from "./Pages/Links";
-import RegisterLogin from "./Pages/RegisterLogin";
+import Signin from "./Pages/Signin";
+import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 import ZonEnMaan from "./Pages/ZonEnMaan";
 
@@ -22,7 +23,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Wist" element={<Wist />}/>
             <Route path="/Links" element={<Links />} />
-            <Route path="/RegisterLogin" element={<RegisterLogin />} />
+            <Route path="/Signin" element={<Signin />} />
+              <Route path="/SignUp" element={<SignUp />} />
             <Route path="/ZonEnMaan" element={<ZonEnMaan />} />
           </Routes>
 
