@@ -3,7 +3,7 @@ import "../components/SignUp/SignUpStyles.css"
 import {Link, useNavigate} from "react-router-dom";
 import {UserAuth} from "../context/AuthContext";
 import sunrise from "../assets/john-towner-CakC6u4d95g-unsplash.jpg";
-import Moon from "../assets/sanni-sahil-cSm2a_-25YU-unsplash.jpg";
+
 
 
 function SignUp() {
@@ -16,20 +16,39 @@ function SignUp() {
 
     const handleSubmit = async(e) => {
         e.preventDefault()
-        setError('')
+        setError('');
         try {
-            await createUser(email, password)
-            navigate('/account')
+            await createUser(email, password);
+            navigate("/account");
         } catch (e) {
-            setError(e.message)
-            console.log(e.message)
+            switch (e.code) {
+                case "auth/email-already-in-use":
+                    setError("Dit emailadres is al in gebruik.");
+                    break;
+                case "auth/invalid-email":
+                    setError("Ongeldig emailadres.");
+                    break;
+                case "auth/weak-password":
+                    setError("Wachtwoord moet minimaal 6 tekens zijn.");
+                    break;
+                default:
+                    setError("Er is iets fout gegaan, probeer het later opnieuw.");
+                    break;
+            }
+            /*try {
+                await createUser(email, password)
+                navigate('/account')
+            } catch (e) {
+                setError(e.message)
+                console.log(e.message)
+            }*/
         }
     }
 
     return (
         <div className='SignUp'>
             <div className="overlay">
-                <img className="img" src={sunrise}/>
+                <img className="img" src={sunrise} alt=""/>
                 <div className="content">
                     <div className="grid-container">
                         <div className="grid-item item1SU">
@@ -43,12 +62,14 @@ function SignUp() {
                 </label>
                 <input onChange={(e) => setEmail(e.target.value)} type="email"/>
                 </div>
+
                 <div>
                     <label>
                         Wachtwoord
                     </label>
                     <input onChange={(e) =>setPassword(e.target.value)} type="password"/>
                 </div>
+                {error && <div className="error">{error}</div>}
                 <button>Maak account aan</button>
             </form>
 

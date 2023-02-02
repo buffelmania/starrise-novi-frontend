@@ -36,7 +36,7 @@ function Navbar(){
 
 
             <div className="nav-icons">
-                <BiSearch className='icon' style={{marginRight: '1rem'}}/>
+
                 <Link className="nav-link" to="/Account"><BsPerson className='icon'/></Link>
             </div>
             <div className="hamburger" onClick={handleNav}>
@@ -49,6 +49,7 @@ function Navbar(){
                     <Link className="nav-link-mobile" to="/Wist"><li> Wist je dat?</li></Link>
                     <Link className="nav-link-mobile" to="/Links"><li> Interessante links</li></Link>
                     <Link className="nav-link-mobile" to="/Signin"><li>Signin</li></Link>
+                    <Link className="nav-link" to="/SignUp"><li>SignUp</li></Link>
                     <Link className="nav-link" to="/ZonEnMaan"><li>Zon en Maan</li></Link>
                 </ul>
                 <div className="mobile-menu-bottom">

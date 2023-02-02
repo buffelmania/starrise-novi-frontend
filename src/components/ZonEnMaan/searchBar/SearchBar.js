@@ -1,6 +1,7 @@
 import React, {  useState } from 'react';
 import './SearchBar.css';
 
+
 function SearchBar({ setLocationHandler }) {
     const [query, setQuery] = useState('');
 

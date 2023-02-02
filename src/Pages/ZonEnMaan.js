@@ -12,7 +12,7 @@ function ZonEnMaan(){
 const [data,setData] = useState({})
 const [location, setLocation] = useState('')
 
-    const url ='https://api.ipgeolocation.io/astronomy?apiKey=d793088378b847f6b524c3091aa6ecfd&location=${location}'
+
 
 
 
@@ -24,6 +24,7 @@ const [location, setLocation] = useState('')
                 setData(response.data);
             } catch (e) {
                 console.error(e);
+
             }
         }
 
@@ -35,7 +36,7 @@ const [location, setLocation] = useState('')
     return(
         <div className='zonEnMaan'>
             <div className="overlay">
-                <img className="img" src={SunMoon}/>
+                <img className="img" src={SunMoon} alt=""/>
                 <div className="content">
                     <div className="grid-container">
                     <div className="grid-item item11">
@@ -54,11 +55,13 @@ const [location, setLocation] = useState('')
                     <h2>Zonsondergang: {data.sunset}</h2>
                    <h2>Afstand tot de zon: {data.sun_distance}</h2>
 
+
                 </>
 
             }
 
           </span>
+
 
 
 
@@ -80,6 +83,7 @@ const [location, setLocation] = useState('')
                     <h2>Maansopkomst: {data.moonrise}</h2>
                     <h2>Maansondergang: {data.moonset}</h2>
                     <h2>Afstand tot de maan: {data.moon_distance}</h2>
+
 
                 </>
 

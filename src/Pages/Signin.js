@@ -30,7 +30,7 @@ const Signin = () => {
 
 <div className="SignIn">
     <div className="overlay">
-        <img className="img" src={Moon}/>
+        <img className="img" src={Moon} alt=""/>
         <div className="content">
             <div className="grid-container">
                 <div className="grid-item item1SI">
@@ -39,7 +39,7 @@ const Signin = () => {
             <p>Heb je nog geen account? Maak dan snel een <Link to="/SignUp">account aan.</Link></p>
 
 
-            <form class onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
 
                     <label>
                         Email adres
@@ -51,6 +51,7 @@ const Signin = () => {
                         Wachtwoord
                     </label>
                     <input onChange={(e) =>setPassword(e.target.value)} type="password"/>
+                {error && <div className="error">Inloggegevens zijn onjuist</div>}
 
                 <button>Login</button>
             </form>

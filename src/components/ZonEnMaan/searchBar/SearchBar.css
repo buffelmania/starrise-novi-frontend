@@ -10,11 +10,12 @@
     outline: none;
 }
 
-.searchbar button {
+button {
+    background-image: linear-gradient(45deg,var(--primary-dark)0%, var(--primary-light)100%);
+    border: 20px;
+    color: #fff;
+    padding: .7rem 1.5rem;
     border-radius: 20px;
-    border: none;
-    padding: 8px 16px;
-    color: white;
     cursor: pointer;
-    outline: none;
+    font-family: 'Poppins', sans-serif ;
 }
