@@ -12,9 +12,6 @@
 
 .ZonEnMaan:before{
     content: '';
-    /*background-image: url("../../assets/rachel-cook-mOcdke2ZQoE-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -156,5 +153,79 @@ h1{
 .wrong-location-error {
     color: white;
     font-size: 14px;
+}
+
+.zonEnMaan {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    padding-top: 60px;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.1) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.zonEnMaan .content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item11 {
+    grid-column: 1;
+    grid-row: 1 / 2;
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 20px;
+    width: 556px;
+    height: 316px;
+}
+
+.item21 {
+    grid-column:  2;
+    grid-row: 1 / 2;
+    background-color: #D9D9D9;
+    text-align: center;
+    border-radius: 20px;
+    width: 556px;
+    height: 316px;
 }
 

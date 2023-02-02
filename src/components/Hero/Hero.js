@@ -7,12 +7,14 @@ function Hero() {
     return(
         <div className='hero'>
 
-            <img src={Galaxy}/>
-            <div className="overlay"></div>
+            <div className="overlay">
+            <img className="img" src={Galaxy}/>
+
             <div className="content">
                 <h1>Zien hoelaat de Zon en maan opkomen en ondergaan</h1>
                 <h2>Over ter wereld</h2>
             </div>
+        </div>
         </div>
     )
 

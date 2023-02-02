@@ -3,7 +3,7 @@
 }
 
 .searchbar input {
-    border-radius: 2px 0 0 2px;
+    border-radius: 20px;
     border: none;
     padding: 8px 16px;
     width: 70%;
@@ -11,10 +11,9 @@
 }
 
 .searchbar button {
-    border-radius: 0 2px 2px 0;
+    border-radius: 20px;
     border: none;
     padding: 8px 16px;
-    background-color: orange;
     color: white;
     cursor: pointer;
     outline: none;

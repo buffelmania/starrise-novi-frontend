@@ -37,7 +37,7 @@ function Navbar(){
 
             <div className="nav-icons">
                 <BiSearch className='icon' style={{marginRight: '1rem'}}/>
-                <Link className="nav-link" to="/account"><BsPerson className='icon'/></Link>
+                <Link className="nav-link" to="/Account"><BsPerson className='icon'/></Link>
             </div>
             <div className="hamburger" onClick={handleNav}>
                 {!nav ? (<HiOutlineMenuAlt4 className='icon'/> ): (<AiOutlineClose style={{color: '#000'}} className='icon'/>)}
@@ -54,7 +54,7 @@ function Navbar(){
                 <div className="mobile-menu-bottom">
                     <div className="menu-icons">
                         <button>Zoeken</button>
-                        <Link to="/account"><button>Account</button></Link>
+                        <Link to="/Account"><button>Account</button></Link>
                     </div>
                     <div className="social-icons">
                         <FaFacebook className='icon'/>

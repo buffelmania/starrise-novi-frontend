@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import "../components/SignUp/SignUpStyles.css"
 import {Link, useNavigate} from "react-router-dom";
 import {UserAuth} from "../context/AuthContext";
+import sunrise from "../assets/john-towner-CakC6u4d95g-unsplash.jpg";
+import Moon from "../assets/sanni-sahil-cSm2a_-25YU-unsplash.jpg";
 
 
 function SignUp() {
@@ -25,10 +27,15 @@ function SignUp() {
     }
 
     return (
-        <div>
-          <div className="SignUp">
+        <div className='SignUp'>
+            <div className="overlay">
+                <img className="img" src={sunrise}/>
+                <div className="content">
+                    <div className="grid-container">
+                        <div className="grid-item item1SU">
+
               <h2>Heb je al een account? <Link to="/Signin">Log dan snel in</Link></h2>
-          </div>
+
             <form onSubmit={handleSubmit}>
                 <div>
                 <label>
@@ -47,7 +54,10 @@ function SignUp() {
 
 
 
-
+</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     );

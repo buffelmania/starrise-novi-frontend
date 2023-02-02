@@ -16,7 +16,7 @@ function SearchBar({ setLocationHandler }) {
                 name="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Zoek een stad in Nederland"
+                placeholder="voer een plaatsnaam in"
             />
 
             <button type="submit">

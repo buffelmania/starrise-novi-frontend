@@ -4,9 +4,9 @@ import axios from 'axios';
 import '../components/ZonEnMaan/ZonEnMaanStyles.css'
 import {useEffect} from "react";
 import '../components/ZonEnMaan/searchBar/SearchBar';
-import '../components/ZonEnMaan/tabBarMenu/TabBarMenu';
 import SearchBar from "../components/ZonEnMaan/searchBar/SearchBar";
-import TabBarMenu from "../components/ZonEnMaan/tabBarMenu/TabBarMenu";
+import SunMoon from "../assets/Zon en Maan.png";
+
 
 function ZonEnMaan(){
 const [data,setData] = useState({})
@@ -33,12 +33,16 @@ const [location, setLocation] = useState('')
     }, [location]);
 
     return(
-        <div className="ZonEnMaan">
-            <div className="container">
-                <div className="weather-container">
+        <div className='zonEnMaan'>
+            <div className="overlay">
+                <img className="img" src={SunMoon}/>
+                <div className="content">
+                    <div className="grid-container">
+                    <div className="grid-item item11">
+
 
                     {/*HEADER -------------------- */}
-                    <div className="weather-header">
+
                         <SearchBar setLocationHandler={setLocation}/>
 
                         <span className="location-details">
@@ -51,32 +55,48 @@ const [location, setLocation] = useState('')
                    <h2>Afstand tot de zon: {data.sun_distance}</h2>
 
                 </>
+
+            }
+
+          </span>
+
+
+
+
+
+
+
+
+
+                </div>
+                    <div className="grid-item item21">
+
+
+                        <span className="location-details">
+            {Object.keys(data).length > 0 &&
+                <>
+
+                    <h3>{data.name}</h3>
+                    <h2>Maansopkomst: {data.moonrise}</h2>
+                    <h2>Maansondergang: {data.moonset}</h2>
+                    <h2>Afstand tot de maan: {data.moon_distance}</h2>
+
+                </>
+
             }
 
           </span>
                     </div>
-
-                    {/*CONTENT ------------------ */}
-                    <div className="weather-content">
-                        <TabBarMenu/>
-
-                        <div className="tab-wrapper">
-                            Alle inhoud van de tabbladen komt hier!
-                        </div>
                     </div>
 
-                </div>
-                <div className="bottom">
-                    <div className="DistanceToSun">
-                        <p className='bold'>100000</p>
-                    <p>Afstand tot de zon</p>
-                    </div>
 
-                </div>
-            </div>
+
 
         </div>
+            </div>
+        </div>
+
     );
 }
 
-export default ZonEnMaan
+export default ZonEnMaan;
