@@ -8,7 +8,7 @@ function Hero() {
         <div className='hero'>
 
             <div className="overlay">
-            <img className="img" src={Galaxy}/>
+            <img className="img" src={Galaxy} alt=""/>
 
             <div className="content">
                 <h1>Zien hoelaat de Zon en maan opkomen en ondergaan</h1>
