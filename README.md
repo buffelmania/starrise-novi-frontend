@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+De website StarRise is gemaakt als opdracht voor de eindopdracht Frontend. 
+Daar hoort ook een installatiehandleiding bij, zodat een ieder dit programma kan 
+installeren en gebruiken. 
+Deze handleiding neemt u mee vanaf de installatie tot aan het opstarten van de app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Wat is er nodig voor het opstarten?
 
-## Available Scripts
+De link naar Github en Firebase evenals de inloggegevens van Firebase zijn verwerkt in de 
+aparte installatiehandleiding die via Teams in ingeleverd.
 
-In the project directory, you can run:
+Een internetverbinding, deze is nodig om te kunnen communiceren met de Api, 
+waar de gegevens van de Zon en Maan worden opgehaald, en Firebase, waarmee wordt gecommuniceerd met de database voor het inloggen, registeren en authenticeren.
+Daarnaast is het nodig dat Node.js is geïnstalleerd, 
+Node zorgt onder andere dat de website überhaupt kan functioneren en kan 
+communiceren met de backend en de api. 
+Een recente versie van Node.js kan gedownload worden via de 
+volgende link: https://nodejs.org/en/download/
 
-### `npm start`
+De app daadwerkelijk opstarten
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In de bijgeleverde zip-map genaamd wvdbijl-900100893-eindopdracht-Frontend vindt u de 
+code om de app te kunnen draaien. 
+Om hier bij te kunnen moet u eerste het bestand uitpakken.
+Nadat u het bestand heeft uitgepakt, opent u de map ‘starrise-frontend-novi-eindopdracht’ in een zogenaamde IDE. 
+Een IDE is niks meer dan een programma die helpt om een app als StarRise te maken. 
+Er zijn verschillende IDE’s op de markt, zo is deze app in Webstorm gemaakt, 
+maar ook Visual studio Code van Microsoft staat heel goed aangeschreven. 
+Het maakt niet uit welke IDE u kiest, zolang u maar de map ‘starrise-frontend-novi-eindopdracht’ erin kunt openen.
+Om alle goed te installeren, gaat u naar de terminal in uw IDE, die is vaak ook zo genoemd. In de Terminal typt u: npm install. 
+De IDE laat weten wanneer de installatie is voltooid. Vaak duurt dit hooguit een minuut. Alles is nu geïnstalleerd.
+U kunt nu in het zelfde scherm als waarin u npm install heeft getypt, het volgende command typen: npm start*, de app zal nu starten en op een lokale server de app draaien, dit gebeurt automatisch en hoeft u verder niets meer voor te doen. De app zal op een internet browser starten die als standaard op uw computer is geïnstalleerd. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+De app gebruiken
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+De app kan gewoon gebruikt worden, maar de secties ‘Zon en Maan’ en ‘Account’ zijn alleen toegankelijk voor ingelogde gebruikers. U kunt via ‘SignUp’ een eigen account aanmaken, of meteen via ‘SignIn’ inloggen met test@test.com, wachtwoord: 123456. U kunt te allen tijde ook weer zelf uitloggen door naar ‘account’ te gaan (het icoontje rechts bovenin) en op uitloggen te klikken.
+Packages
+Om alle functionaliteiten goed te kunnen gebruiken, zijn er verschillende packages geïnstalleerd.
+React
+React-router
+React-router-dom
+Axios
+Icons
+Firebase
+Fonts
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
