@@ -1,3 +1,37 @@
-.Home{
+.homes {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
     padding-top: 60px;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.1) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.homes .content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
