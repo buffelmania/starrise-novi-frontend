@@ -1,6 +1,5 @@
 import React from "react";
-import HomeStyles from "../components/Home/HomeStyles.css";
-import Hero from "../components/Hero/Hero";
+import Homes from "../components/Home/Homes";
 
 
 
@@ -12,7 +11,7 @@ function Home() {
     return (
         <div>
 
-            <Hero />
+            <Homes />
 
 
         </div>

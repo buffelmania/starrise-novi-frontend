@@ -1,14 +1,14 @@
 import React from "react";
-import './HeroStyles.css'
+import './HomeStyles.css'
 
 import Galaxy from "../../../../starrise-frontend-novi-eindopdracht/src/assets/Galaxy-by-hristo-fidanov.jpg"
 
-function Hero() {
+function Homes() {
     return(
-        <div className='hero'>
+        <div className='homes'>
 
             <div className="overlay">
-            <img className="img" src={Galaxy}/>
+            <img className="img" src={Galaxy} alt=""/>
 
             <div className="content">
                 <h1>Zien hoelaat de Zon en maan opkomen en ondergaan</h1>
@@ -20,4 +20,4 @@ function Hero() {
 
 }
 
-export default Hero
+export default Homes

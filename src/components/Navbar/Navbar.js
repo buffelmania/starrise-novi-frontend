@@ -1,10 +1,8 @@
 import React, {useState} from "react";
-import {BiSearch} from 'react-icons/bi'
 import {BsPerson} from "react-icons/bs";
 import {HiOutlineMenuAlt4} from "react-icons/hi";
 import './NavbarStyles.css'
 import {AiOutlineClose} from 'react-icons/ai';
-/*import {FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube} from "react-icons/fa";*/
 import {Link } from "react-router-dom";
 import {FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube} from "react-icons/fa";
 
