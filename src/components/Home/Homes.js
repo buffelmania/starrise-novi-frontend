@@ -11,8 +11,9 @@ function Homes() {
             <img className="img" src={Galaxy} alt=""/>
 
             <div className="content">
-                <h1>Zien hoelaat de Zon en maan opkomen en ondergaan</h1>
-                <h2>Over ter wereld</h2>
+
+                <h2>Welkom op de website van StarRise. HIer vind je weetjes over ons zonnestelsel,
+                    interessante links en kan je als je bent ingelogd, zien hoelaat de zon en maan bij jou opkomen en ondergaan.</h2>
             </div>
         </div>
         </div>

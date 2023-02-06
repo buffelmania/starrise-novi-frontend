@@ -5,7 +5,7 @@ import '../components/ZonEnMaan/ZonEnMaanStyles.css'
 import {useEffect} from "react";
 import '../components/ZonEnMaan/searchBar/SearchBar';
 import SearchBar from "../components/ZonEnMaan/searchBar/SearchBar";
-import SunMoon from "../assets/Zon en Maan.png";
+import SunMoon from "../assets/Zon en Maan.jpg";
 
 
 function ZonEnMaan(){
@@ -53,7 +53,7 @@ const [location, setLocation] = useState('')
                     <h3>{data.name}</h3>
                     <h2>Zonsopkomst: {data.sunrise}</h2>
                     <h2>Zonsondergang: {data.sunset}</h2>
-                   <h2>Afstand tot de zon: {data.sun_distance}</h2>
+                   <h2>Afstand tot de zon: {data.sun_distance} km</h2>
 
 
                 </>
@@ -82,7 +82,7 @@ const [location, setLocation] = useState('')
                     <h3>{data.name}</h3>
                     <h2>Maansopkomst: {data.moonrise}</h2>
                     <h2>Maansondergang: {data.moonset}</h2>
-                    <h2>Afstand tot de maan: {data.moon_distance}</h2>
+                    <h2>Afstand tot de maan: {data.moon_distance} km</h2>
 
 
                 </>
