@@ -11,7 +11,7 @@ import ZonEnMaan from "./Pages/ZonEnMaan";
 import Account from "./Pages/Account";
 import {AuthContextProvider} from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
-
+import Quiz from "./components/Quiz/Quiz";
 
 
 
@@ -28,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Wist" element={<Wist />}/>
             <Route path="/Links" element={<Links />} />
+              <Route path="/Quiz" element={<Quiz />} />
             <Route path="/Signin" element={<Signin />} />
               <Route path="/SignUp" element={<SignUp />} />
               <Route path="/ZonEnMaan" element={<ProtectedRoute><ZonEnMaan /></ProtectedRoute>} />
