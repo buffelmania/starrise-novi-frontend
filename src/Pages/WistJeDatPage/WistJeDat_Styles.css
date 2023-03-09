@@ -60,6 +60,7 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
+    color: black;
 }
 
 .display-block {
@@ -96,6 +97,10 @@ p{
     margin-top: 0;
 }
 
+.container > div p {
+    color: black;
+}
+
 .container > div button {
     margin-bottom: 0;
 }
@@ -103,29 +108,49 @@ p{
 .container > div:nth-child (1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: #f0f0f0;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border-radius: 20px;
+    width: 211px;
+    height: 298px;
 }
 
 .container > div:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    border-radius: 20px;
+    width: 211px;
+    height: 298px;
 }
 
 .container > div:nth-child(3) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    border-radius: 20px;
+    width: 337px;
+    height: 152px;
 }
 
 .container > div:nth-child(4) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border-radius: 20px;
+    width: 337px;
+    height: 152px;
+}
+
+.container > div:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border-radius: 20px;
+    width: 211px;
+    height: 298px;
+}
+
+.container > div:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    border-radius: 20px;
+    width: 211px;
+    height: 298px;
 }
 
 /*.Wist .grid-container > div :nth-child(1) {

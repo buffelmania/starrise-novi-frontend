@@ -1,7 +1,8 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom";
-import "../components/account/AccountStyles.css"
-import {UserAuth} from "../context/AuthContext";
+import "./AccountStyles.css"
+import {UserAuth} from "../../components/context/AuthContext";
+import Button from "../../components/Button/Button";
 
 function Account(){
     const {user, logout} = UserAuth();
@@ -18,7 +19,7 @@ try {
         <div className="Account">
             <h2>Account</h2>
             <p>Gebruiker Email: {user && user.email }</p>
-            <button onClick={handleLogout}>Log uit</button>
+            <Button label="Log uit" onClick={handleLogout} />
         </div>
     )
 }

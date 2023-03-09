@@ -33,7 +33,7 @@ U kunt nu in het zelfde scherm als waarin u npm install heeft getypt, het volgen
 
 De app gebruiken
 
-De app kan gewoon gebruikt worden, maar de secties ‘Zon en Maan’ en ‘Account’ zijn alleen toegankelijk voor ingelogde gebruikers. U kunt via ‘SignUp’ een eigen account aanmaken, of meteen via ‘SignIn’ inloggen met test@test.com, wachtwoord: 123456. U kunt te allen tijde ook weer zelf uitloggen door naar ‘account’ te gaan (het icoontje rechts bovenin) en op uitloggen te klikken.
+De app kan gewoon gebruikt worden, maar de secties ‘Zon en Maan’ en ‘Account’ zijn alleen toegankelijk voor ingelogde gebruikers. U kunt via ‘SignUpPage’ een eigen account aanmaken, of meteen via ‘SignIn’ inloggen met test@test.com, wachtwoord: 123456. U kunt te allen tijde ook weer zelf uitloggen door naar ‘account’ te gaan (het icoontje rechts bovenin) en op uitloggen te klikken.
 Packages
 Om alle functionaliteiten goed te kunnen gebruiken, zijn er verschillende packages geïnstalleerd.
 React

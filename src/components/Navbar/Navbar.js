@@ -28,7 +28,7 @@ function Navbar(){
                 <Link className="nav-link" to="/Links"><li> Interessante links</li></Link>
                 <Link className="nav-link" to="/Quiz"><li> Test je kennis</li></Link>
                 <Link className="nav-link" to="/Signin"><li>Signin</li></Link>
-                <Link className="nav-link" to="/SignUp"><li>SignUp</li></Link>
+                <Link className="nav-link" to="/SignUpPage"><li>SignUp</li></Link>
                 <Link className="nav-link" to="/ZonEnMaan"><li>Zon en Maan</li></Link>
 
             </ul>
@@ -48,7 +48,7 @@ function Navbar(){
                     <Link className="nav-link-mobile" to="/Wist"><li> Wist je dat?</li></Link>
                     <Link className="nav-link-mobile" to="/Links"><li> Interessante links</li></Link>
                     <Link className="nav-link-mobile" to="/Signin"><li>Signin</li></Link>
-                    <Link className="nav-link" to="/SignUp"><li>SignUp</li></Link>
+                    <Link className="nav-link" to="/SignUpPage"><li>SignUp</li></Link>
                     <Link className="nav-link" to="/ZonEnMaan"><li>Zon en Maan</li></Link>
                 </ul>
                 <div className="mobile-menu-bottom">
