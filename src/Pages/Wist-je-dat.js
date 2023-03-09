@@ -7,7 +7,8 @@ import Modal from "../components/WistJeDat/Modal/Modal"
 const elements = [
     { id: 1, title: "Element 1", inhoud: "Dit is een test",  content: "Dit is de inhoud van Element 1." },
     { id: 2, title: "Element 2", content: "Dit is de inhoud van Element 2." },
-    { id: 3, title: "Element 3", content: "Dit is de inhoud van Element 3." }
+    { id: 3, title: "Element 3", content: "Dit is de inhoud van Element 3." },
+    { id: 4, title: "Element 3", content: "Dit is de inhoud van Element 4."}
 ];
 
 const Wist = () => {
@@ -34,6 +35,7 @@ const Wist = () => {
             <div className="overlay">
             <img className="img" src={SolarEclipse} alt=""/>
                 <div className="content">
+                    <div className="container">
 
                     {elements.map((element) => (
                         <div key={element.id}>
@@ -75,7 +77,7 @@ const Wist = () => {
                             <p>De maan ook ronddraait? Wij zien alleen telkens dezelfde kant van de maan omdat de
                             rotatiesnelheid van de maan precies gelijk loopt met snelheid van de baan om de Aarde.</p></h3></div>
                     </div>*/}
-
+                    </div>
 
                 </div>
 
