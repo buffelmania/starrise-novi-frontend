@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {BsPerson} from "react-icons/bs";
 import {HiOutlineMenuAlt4} from "react-icons/hi";
-import './NavbarStyles.css'
+import './CSS/NavbarStyles.css'
 import {AiOutlineClose} from 'react-icons/ai';
 import {Link } from "react-router-dom";
 import {FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube} from "react-icons/fa";
