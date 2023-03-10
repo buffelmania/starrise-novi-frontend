@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Wist from "./Pages/Wist-je-dat";
-import Links from "./Pages/Links";
+import Links from "./Pages/LinksPage/Links";
 import Signin from "./Pages/Signin";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/HomePage/Home";
