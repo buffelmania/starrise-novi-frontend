@@ -8,7 +8,7 @@ import Signin from "./Pages/Signin";
 import SignUp from "./Pages/SignUp";
 import Home from "./Pages/Home";
 import ZonEnMaan from "./Pages/ZonEnMaan";
-import Account from "./Pages/Account";
+import Account from "./Pages/AccountPage/Account";
 import {AuthContextProvider} from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Quiz from "./components/Quiz/Quiz";
