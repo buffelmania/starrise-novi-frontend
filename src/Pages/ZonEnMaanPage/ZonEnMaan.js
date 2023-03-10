@@ -1,11 +1,11 @@
 import React from "react";
 import {useState} from "react";
 import axios from 'axios';
-import '../components/ZonEnMaan/ZonEnMaanStyles.css'
+import './ZonEnMaanStyles.css'
 import {useEffect} from "react";
-import '../components/ZonEnMaan/searchBar/SearchBar';
-import SearchBar from "../components/ZonEnMaan/searchBar/SearchBar";
-import SunMoon from "../assets/Zon en Maan.jpg";
+import '../../components/searchBar/SearchBar';
+import SearchBar from "../../components/searchBar/SearchBar";
+import SunMoon from "../../assets/Zon en Maan.jpg";
 
 
 function ZonEnMaan(){

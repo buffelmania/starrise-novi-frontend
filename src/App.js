@@ -7,10 +7,10 @@ import Links from "./Pages/LinksPage/Links";
 import Signin from "./Pages/SigninPage/Signin";
 import SignUp from "./Pages/SignUpPage/SignUp";
 import Home from "./Pages/HomePage/Home";
-import ZonEnMaan from "./Pages/ZonEnMaan";
+import ZonEnMaan from "./Pages/ZonEnMaanPage/ZonEnMaan";
 import Account from "./Pages/AccountPage/Account";
 import {AuthContextProvider} from "./components/context/AuthContext";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import Quiz from "./Pages/TestJeKennis/Quiz";
 
 
