@@ -3,6 +3,7 @@ import SolarEclipse from "../../assets/jongsun-lee-F-pSZO_jeE8-unsplash.jpg";
 import './WistJeDat_Styles.css'
 import Modal from "../../components/Modal/Modal"
 import elements from "./Elements/ElementsGridAndModal";
+import Button from "../../components/Button/Button";
 
 
 
@@ -36,7 +37,8 @@ const Wist = () => {
                         <div key={element.id}>
                             <h3>{element.title}</h3>
                             <p>{element.inhoud}</p>
-                            <button onClick={() => handleOpenModal(element)}>Meer weten?</button>
+                            <Button label="Meer weten?" onClick={() => handleOpenModal(element)}/>
+
                         </div>
                     ))}
                     {selectedElement && (

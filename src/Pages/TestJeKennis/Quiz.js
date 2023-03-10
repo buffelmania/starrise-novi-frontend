@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./QuizStyles.css";
 import vragen from "./Questions/Questions";
+import Button from "../../components/Button/Button";
 
 
 function Quiz() {
@@ -38,6 +39,7 @@ function Quiz() {
                             <button key={index} onClick={() => controleerAntwoord(antwoord)}>
                                 {antwoord}
                             </button>
+
                         ))}
                     </div>
                     <p>
