@@ -5,13 +5,13 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Wist from "./Pages/Wist-je-dat";
 import Links from "./Pages/LinksPage/Links";
 import Signin from "./Pages/SigninPage/Signin";
-import SignUp from "./Pages/SignUp";
+import SignUp from "./Pages/SignUpPage/SignUp";
 import Home from "./Pages/HomePage/Home";
 import ZonEnMaan from "./Pages/ZonEnMaan";
 import Account from "./Pages/AccountPage/Account";
 import {AuthContextProvider} from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Quiz from "./components/Quiz/Quiz";
+import Quiz from "./Pages/TestJeKennis/Quiz";
 
 
 

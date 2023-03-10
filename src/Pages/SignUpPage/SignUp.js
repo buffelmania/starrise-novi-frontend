@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import "../components/SignUp/SignUpStyles.css"
+import "./SignUpStyles.css"
 import {Link, useNavigate} from "react-router-dom";
-import {UserAuth} from "../context/AuthContext";
-import sunrise from "../assets/john-towner-CakC6u4d95g-unsplash.jpg";
+import {UserAuth} from "../../context/AuthContext";
+import sunrise from "../../assets/john-towner-CakC6u4d95g-unsplash.jpg";
 
 
 
@@ -35,13 +35,7 @@ function SignUp() {
                     setError("Er is iets fout gegaan, probeer het later opnieuw.");
                     break;
             }
-            /*try {
-                await createUser(email, password)
-                navigate('/account')
-            } catch (e) {
-                setError(e.message)
-                console.log(e.message)
-            }*/
+
         }
     }
 
