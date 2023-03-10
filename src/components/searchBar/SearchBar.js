@@ -1,5 +1,6 @@
 import React, {  useState } from 'react';
 import './SearchBar.css';
+import Button from "../../components/Button/Button";
 
 
 function SearchBar({ setLocationHandler }) {

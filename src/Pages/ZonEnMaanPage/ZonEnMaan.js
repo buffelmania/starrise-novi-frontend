@@ -8,6 +8,7 @@ import SearchBar from "../../components/searchBar/SearchBar";
 import SunMoon from "../../assets/Zon en Maan.jpg";
 
 
+
 function ZonEnMaan(){
 const [data,setData] = useState({})
 const [location, setLocation] = useState('')

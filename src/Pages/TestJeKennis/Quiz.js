@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./QuizStyles.css";
 import vragen from "./Questions/Questions";
-import Button from "../../components/Button/Button";
 
 
 function Quiz() {
