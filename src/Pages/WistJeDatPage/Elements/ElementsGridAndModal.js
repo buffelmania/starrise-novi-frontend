@@ -1,4 +1,4 @@
-import '../CSS/WistJeDat_Styles.css'
+import '../WistJeDat_Styles.css'
 
 
 const elements = [

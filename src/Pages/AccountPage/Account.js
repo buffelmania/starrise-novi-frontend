@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom";
 import "./AccountStyles.css"
-import {UserAuth} from "../../context/AuthContext";
+import {UserAuth} from "../../components/context/AuthContext";
 import Button from "../../components/Button/Button";
 
 function Account(){

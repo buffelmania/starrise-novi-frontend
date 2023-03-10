@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./SignUpStyles.css"
 import {Link, useNavigate} from "react-router-dom";
-import {UserAuth} from "../../context/AuthContext";
+import {UserAuth} from "../../components/context/AuthContext";
 import sunrise from "../../assets/john-towner-CakC6u4d95g-unsplash.jpg";
 
 
