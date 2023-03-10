@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Link, useNavigate} from 'react-router-dom';
-import {UserAuth} from "../context/AuthContext";
-import Moon from "../assets/sanni-sahil-cSm2a_-25YU-unsplash.jpg"
-import '../components/Signin/SigninStyles.css'
+import {UserAuth} from "../../context/AuthContext";
+import Moon from "../../assets/sanni-sahil-cSm2a_-25YU-unsplash.jpg"
+import './SigninStyles.css'
 
 
 
