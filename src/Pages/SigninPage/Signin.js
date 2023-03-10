@@ -3,6 +3,8 @@ import {Link, useNavigate} from 'react-router-dom';
 import {UserAuth} from "../../components/context/AuthContext";
 import Moon from "../../assets/sanni-sahil-cSm2a_-25YU-unsplash.jpg"
 import './SigninStyles.css'
+import Button from "../../components/Button/Button";
+
 
 
 
@@ -53,7 +55,7 @@ const Signin = () => {
                     <input onChange={(e) =>setPassword(e.target.value)} type="password"/>
                 {error && <div className="error">Inloggegevens zijn onjuist</div>}
 
-                <button>Login</button>
+                <Button label="login"/>
             </form>
                 </div>
             </div>
