@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CSS/QuizStyles.css";
+import "./QuizStyles.css";
 import vragen from "./Questions/Questions";
 
 
