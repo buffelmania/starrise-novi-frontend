@@ -6,7 +6,7 @@ import Wist from "./Pages/Wist-je-dat";
 import Links from "./Pages/Links";
 import Signin from "./Pages/Signin";
 import SignUp from "./Pages/SignUp";
-import Home from "./Pages/Home";
+import Home from "./Pages/HomePage/Home";
 import ZonEnMaan from "./Pages/ZonEnMaan";
 import Account from "./Pages/AccountPage/Account";
 import {AuthContextProvider} from "./context/AuthContext";

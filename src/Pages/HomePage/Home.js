@@ -1,5 +1,5 @@
 import React from "react";
-import Homes from "../components/Home/Homes";
+import Homes from "./HomeContent/Homes";
 
 
 
