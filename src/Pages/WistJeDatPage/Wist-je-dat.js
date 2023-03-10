@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import SolarEclipse from "../assets/jongsun-lee-F-pSZO_jeE8-unsplash.jpg";
-import '../components/WistJeDat/CSS/WistJeDat_Styles.css'
-import Modal from "../components/WistJeDat/Modal/Modal"
-import elements from "../components/WistJeDat/Elements/ElementsGridAndModal";
+import SolarEclipse from "../../assets/jongsun-lee-F-pSZO_jeE8-unsplash.jpg";
+import './WistJeDat_Styles.css'
+import Modal from "../../components/Modal/Modal"
+import elements from "./Elements/ElementsGridAndModal";
 
 
 
