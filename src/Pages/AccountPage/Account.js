@@ -4,24 +4,31 @@ import "./AccountStyles.css"
 import {UserAuth} from "../../components/context/AuthContext";
 import Button from "../../components/Button/Button";
 
-function Account(){
-    const {user, logout} = UserAuth();
+function Account() {
+    const { user, logout } = UserAuth();
     const navigate = useNavigate();
+
     const handleLogout = async () => {
-try {
-    await logout()
-    navigate('/')
-    } catch (e){
-    console.log(e.message)
-}
-    }
+        try {
+            await logout();
+            navigate('/');
+        } catch (e) {
+            console.log(e.message);
+        }
+    };
+
     return (
-        <div className="Account">
+        <section className="Account">
+            <header>
             <h2>Account</h2>
+            </header>
+            <main>
             <p>Gebruiker Email: {user && user.email }</p>
             <Button label="Log uit" onClick={handleLogout} />
-        </div>
-    )
+            </main>
+
+        </section>
+    );
 }
 
-export default Account
+export default Account;

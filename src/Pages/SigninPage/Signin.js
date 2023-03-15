@@ -30,13 +30,14 @@ const Signin = () => {
     return (
 
 
-<div className="SignIn">
+<section className="SignIn">
     <div className="overlay">
         <img className="img" src={Moon} alt=""/>
         <div className="content">
+
             <div className="grid-container">
                 <div className="grid-item item1SI">
-
+<main>
 <p>Login om te zien wanneer de zon en maan opkomen en weer ondergaan.</p>
             <p>Heb je nog geen account? Maak dan snel een <Link to="/SignUp">account aan.</Link></p>
 
@@ -57,12 +58,14 @@ const Signin = () => {
 
                 <Button label="login"/>
             </form>
+</main>
                 </div>
             </div>
+
     </div>
 </div>
 
-</div>
+</section>
 
 
     );

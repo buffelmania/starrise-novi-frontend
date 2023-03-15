@@ -41,14 +41,16 @@ function SignUp() {
     }
 
     return (
-        <div className='SignUp'>
+        <section className='SignUp'>
             <div className="overlay">
                 <img className="img" src={sunrise} alt=""/>
                 <div className="content">
                     <div className="grid-container">
                         <div className="grid-item item1SU">
-
+<header>
               <h2>Heb je al een account? <Link to="/Signin">Log dan snel in</Link></h2>
+</header>
+                            <main>
 
             <form onSubmit={handleSubmit}>
                 <div>
@@ -68,6 +70,7 @@ function SignUp() {
 
                 <Button label="Maak account aan"/>
             </form>
+                            </main>
 
 
 
@@ -76,7 +79,7 @@ function SignUp() {
                 </div>
             </div>
 
-        </div>
+        </section>
     );
 }
 

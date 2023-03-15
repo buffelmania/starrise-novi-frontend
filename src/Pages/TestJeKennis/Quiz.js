@@ -20,17 +20,19 @@ function Quiz() {
 
     return (
 
-        <div className='Quiz'>
+        <section className='Quiz'>
             <div className="overlay">
                 <div className="content">
                     <div className="quiz-container">
                         {isQuizAfgelopen() ? (
                             <div className="resultaat-container">
-                                <p>
+                               <header> <p>
                                     <h2>Je hebt {score} van de {vragen.length} vragen goed beantwoord!</h2>
                                 </p>
+                               </header>
                             </div>
                         ) : (
+                            <main>
                             <>
                                 <h2>{vragen[huidigeVraag].vraag}</h2>
                                 <div className="antwoorden-container">
@@ -45,11 +47,12 @@ function Quiz() {
                                 </p>
                                 <p><h3>Score: {score}</h3></p>
                             </>
+                            </main>
                         )}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
