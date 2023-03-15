@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Wist from "./Pages/WistJeDatPage/Wist-je-dat";
@@ -12,6 +11,7 @@ import Account from "./Pages/AccountPage/Account";
 import {AuthContextProvider} from "./components/context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import Quiz from "./Pages/TestJeKennis/Quiz";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -40,7 +40,9 @@ function App() {
 
 
             </BrowserRouter>
+            <Footer/>
         </div>
+
 
   )
 }

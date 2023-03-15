@@ -26,11 +26,11 @@ const Wist = () => {
 
 
     return (
-        <div className='Wist'>
+        <section className='Wist'>
 
             <div className="overlay">
             <img className="img" src={SolarEclipse} alt=""/>
-                <div className="content">
+                <div className="content"><main>
                     <div className="container">
 
                     {elements.map((element) => (
@@ -46,7 +46,9 @@ const Wist = () => {
                             <p>{selectedElement.content}</p>
                         </Modal>
                     )}
+
                     </div>
+                </main>
 
                 </div>
 
@@ -55,7 +57,7 @@ const Wist = () => {
 
 
 
-        </div>
+        </section>
     );
 }
 

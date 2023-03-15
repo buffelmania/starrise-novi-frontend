@@ -28,10 +28,11 @@ function ZonEnMaan() {
     }, [location]);
 
     return (
-        <div className='zonEnMaan'>
+        <section className='zonEnMaan'>
             <div className="overlay">
                 <img className="img" src={SunMoon} alt=""/>
                 <div className="content">
+                    <main>
                     <div className="grid-container">
                         <div className="grid-item item11">
                             <SearchBar setLocationHandler={setLocation}/>
@@ -57,9 +58,10 @@ function ZonEnMaan() {
                             )}
                         </div>
                     </div>
+                    </main>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

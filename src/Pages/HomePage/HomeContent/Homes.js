@@ -19,9 +19,7 @@ function Homes() {
                             Welkom op de website van StarRise. Hier vind je weetjes over ons zonnestelsel, interessante links en kan je als je bent ingelogd, zien hoelaat de zon en maan bij jou opkomen en ondergaan.</h2>
                     </main>
 
-                    <footer>
-                        <p>&copy; 2023 StarRise</p>
-                    </footer>
+
                 </div>
             </div>
         </section>
