@@ -3,6 +3,7 @@ import axios from 'axios';
 import './ZonEnMaanStyles.css'
 import SearchBar from "../../components/searchBar/SearchBar";
 import SunMoon from "../../assets/Zon en Maan.jpg";
+import Weather from "../../components/Weather/Weather";
 
 function ZonEnMaan() {
     const [data, setData] = useState({});
@@ -59,6 +60,7 @@ function ZonEnMaan() {
                         </div>
 
                         <div className="grid-item item31">
+                            <Weather/>
 
                         </div>
                     </div>

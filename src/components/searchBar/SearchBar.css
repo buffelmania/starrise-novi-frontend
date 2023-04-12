@@ -1,5 +1,12 @@
 .searchbar {
     margin: 0 0 16px 0;
+    width: 100%;
+
+}
+
+
+.weather-searchbar input {
+    width: 50%;
 }
 
 .searchbar input {
