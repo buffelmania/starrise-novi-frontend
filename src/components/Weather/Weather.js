@@ -3,7 +3,8 @@ import axios from 'axios';
 import SearchBar from "../searchBar/SearchBar";
 import './WeatherStyles.css'
 
-
+// Importeer de functie round
+const { round } = Math;
 
 function Weather() {
     const [weatherData, setWeatherData] = useState({});
@@ -30,14 +31,16 @@ function Weather() {
             <SearchBar className="weather-search" setLocationHandler={setLocation} />
 
             <span className="location-details">
-      {Object.keys(weatherData).length > 0 &&
-          <>
-              <h2>{weatherData.weather[0].description}</h2>
-              <h3>{weatherData.name}</h3>
-              <h1>{weatherData.main.temp}</h1>
-          </>
-      }
-    </span>
+        {Object.keys(weatherData).length > 0 &&
+            <>
+                <h3>{weatherData.weather[0].description}</h3>
+                <h3>{weatherData.name}</h3>
+
+
+                <h3>{round(weatherData.main.temp - 273.15)}°C</h3>
+            </>
+        }
+      </span>
         </>
     );
 }
