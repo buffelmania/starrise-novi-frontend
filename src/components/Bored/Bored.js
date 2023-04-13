@@ -14,10 +14,10 @@ function Bored() {
             <div className={`card ${flipped ? "flipped" : ""}`} onClick={handleCardClick}>
                 <div className="card-front">
                     <p>{activity}</p>
-                    <button onClick={handleClick}>New Activity</button>
+                    <button onClick={handleClick}>Nieuwe activiteit</button>
                 </div>
                 <div className="card-back" onClick={handleCardClick}>
-                    <p>Click to see a new activity!</p>
+                    <p>Dit is de achterkant :-). Klik nog een keer om de voorkant te zien.</p>
                 </div>
             </div>
         );

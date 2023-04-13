@@ -21,9 +21,9 @@ function SpaceX() {
     return (
         <div>
             <div className="select-container">
-                <label htmlFor="dragons">Select a Dragon:</label>
+                <label htmlFor="dragons">Bekijk Dragon 1 en Dragon 2 van SpaceX</label>
                 <select id="dragons" onChange={handleSelectChange}>
-                    <option value="">-- Select a Dragon --</option>
+                    <option value="">-- Selecteer een Dragon --</option>
                     {dragons.map((dragon) => (
                         <option key={dragon.id} value={dragon.id}>
                             {dragon.name}
