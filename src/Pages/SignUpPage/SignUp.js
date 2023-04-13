@@ -1,23 +1,23 @@
-import React, {useState} from "react";
-import "./SignUpStyles.css"
-import {Link, useNavigate} from "react-router-dom";
-import {UserAuth} from "../../components/context/AuthContext";
+import React, { useState } from "react";
+import "./SignUpStyles.css";
+import { Link, useNavigate } from "react-router-dom";
+import { UserAuth } from "../../components/context/AuthContext";
 import sunrise from "../../assets/john-towner-CakC6u4d95g-unsplash.jpg";
-import Button from "../../components/Button/Button";
-
-
+import Form from "../../components/Form/Form";
+import LoadingSpinner from "../../components/Loading/LoadingSpinner";
 
 function SignUp() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
+    const { createUser } = UserAuth();
+    const navigate = useNavigate();
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('')
-    const {createUser} = UserAuth();
-    const navigate = useNavigate()
-
-    const handleSubmit = async(e) => {
-        e.preventDefault()
-        setError('');
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setIsLoading(true);
         try {
             await createUser(email, password);
             navigate("/account");
@@ -36,49 +36,47 @@ function SignUp() {
                     setError("Er is iets fout gegaan, probeer het later opnieuw.");
                     break;
             }
-
+        } finally {
+            setIsLoading(false);
         }
-    }
+    };
 
     return (
-        <section className='SignUp'>
+        <section className="SignUp">
             <div className="overlay">
-                <img className="img" src={sunrise} alt=""/>
+                <img className="img" src={sunrise} alt="" />
                 <div className="content">
                     <div className="grid-container">
                         <div className="grid-item item1SU">
-<header>
-              <h2>Heb je al een account? <Link to="/Signin">Log dan snel in</Link></h2>
-</header>
+                            <header>
+                                <h2>
+                                    Heb je al een account? <Link to="/Signin">Log dan snel in</Link>
+                                </h2>
+                            </header>
                             <main>
+                                <Form
+                                    onSubmit={handleSubmit}
+                                    buttonText={isLoading ? "Laden..." : "Maak account aan"}
+                                    error={error}
+                                >
+                                    <div>
+                                        <label>Email adres</label>
+                                        <input onChange={(e) => setEmail(e.target.value)} type="email" />
+                                    </div>
 
-            <form onSubmit={handleSubmit}>
-                <div>
-                <label>
-                    Email adres
-                </label>
-                <input onChange={(e) => setEmail(e.target.value)} type="email"/>
-                </div>
+                                    <div>
+                                        <label>Wachtwoord</label>
+                                        <input onChange={(e) => setPassword(e.target.value)} type="password" />
+                                    </div>
 
-                <div>
-                    <label>
-                        Wachtwoord
-                    </label>
-                    <input onChange={(e) =>setPassword(e.target.value)} type="password"/>
-                </div>
-                {error && <div className="error">{error}</div>}
+                                    {isLoading && <LoadingSpinner loading={isLoading} />}
 
-                <Button label="Maak account aan"/>
-            </form>
+                                </Form>
                             </main>
-
-
-
-</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 }
