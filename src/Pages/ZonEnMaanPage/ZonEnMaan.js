@@ -60,7 +60,15 @@ function ZonEnMaan() {
                         </div>
 
                         <div className="grid-item item31">
+                            <h5>Kijk hier hoe het weer bij jou is.</h5><p></p>
                             <Weather/>
+                            <h6>Valt het weer tegen? of wil je wat anders? Kijk dan eens bij een van onderstaande activiteiten</h6>
+
+                            <ul className="link-list">
+                                <li><a href="/Quiz">Doe een Quiz</a></li>
+                                <li><a href="/ISSTracker">Volg de live locatie van het ISS</a></li>
+                                <li><a href="/ToDo">Verveel je je? Kijk hier wat je nog meer kan doen</a></li>
+                            </ul>
 
                         </div>
                     </div>
